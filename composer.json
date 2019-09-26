@@ -1,0 +1,34 @@
+{
+    "name": "shopexpress/apiclient",
+    "description": "ShopExpress API Client",
+    "keywords": [
+        "ShopExpress",
+        "apiclient"
+    ],
+    "homepage": "https://gitlab.com/difocus/api/apiclient",
+    "license": "MIT",
+    "require": {
+        "php" : ">=7.1.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-zlib": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShopExpress\\ApiClient\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ShopExpress\\ApiClient\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
